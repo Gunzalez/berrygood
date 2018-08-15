@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Craibstone</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/craibstone.css" rel="stylesheet">
+    <link href="js/vendor/jquery.mmenu.all.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="js/vendor/pikaday.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <script src="js/lib/isMobile.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+    <div class="page">
+        <div class="section top-section background">
+            <div class="pod">
+                <div class="row top-row">
+                    <h1 id="home"><a href="index.html"><img src="images/logo-craibstone-golf.png" class="logo-golf" alt="Craibstone Golf"></a></h1>
+                    <div class="col-xs-12">
+                        <ul class="auxiliary-navigation">
+                            <li><a href="tel:01224567890" class="text-links"><span>t:</span> 01224&nbsp;567&nbsp;890</a></li>
+                            <li><a href="mailto:golf@marshall-leisure.co.uk" class="text-links"><span>e:</span> golf@marshall-leisure.co.uk</a></li>
+                            <li><a href="index.html" class="home-link home">Home</a></li>
+                            <li><a href="#" class="social-media pinterest">Pinterest</a></li>
+                            <li><a href="#" class="social-media facebook">Facebook</a></li>
+                            <li><a href="#" class="social-media google">Google</a></li>
+                        </ul>
+                        <div class="navigation-bar">
+                            <ul class="primary-navigation">
+                                <li class="golf"><a href="golf.html" class="primary-navigation-link">Golf</a></li>
+                                <li class="bistro"><a href="bistro.html" class="primary-navigation-link">Brimmond Bistro</a></li>
+                                <li class="studio"><a href="studio.html" class="primary-navigation-link">Craibstone Golf Studio</a></li>
+                                <li class="customise active"><a href="customise.html"><span>'Customise your day'</span></a></li>
+                            </ul>
+                            <a href="#menu" class="mobile-navigation-trigger"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="main-carousel">
+                            <p class="carousel-cta">
+                                <span class="cta-title">Course <span>Open</span> Today</span>
+                                <a href="reservations.html" class="cta-link"><span>Book</span> Tee Times <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                            </p>
+                            <img src="images/cms/inner-about-hero.png" alt="" class="hero" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <form id="customise-form" class="form" method="get" action="">
+                <div class="pod">
+                    <div class="row breadcrumb-row">
+                        <div class="col-xs-12">
+                            <div class="copy">
+                                <div class="page-breadcrumb">
+                                    <p>You are here:</p>
+                                    <ul>
+                                        <li><a href="index.html">Home</a><span class="glyphicon glyphicon-menu-right icon" aria-hidden="true"></span></li>
+                                        <li>Customise your day</li>
+                                    </ul>
+                                </div>
+                                <div class="cright"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="copy">
+                                <div class="page-heading">
+                                    <h2>Your perfect day</h2>
+                                    <p>Why not plan your perfect eli me flone os indig aleinos efi ean massa. Cem sociis natoque penaean commodo ling elit. Aenepiscing elit. Aenean commodo lian commodo li etuer adipipiscing elit. Aenean commodo liscing elit.</p>
+                                    <p>Tigula egenean ciommo leodt dolor, gkenean massa. wociis natoque penatibus et magnis dis parturient montes, nascetur.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="copy">
+                                <h2><span>Step 1 :</span> Golf</h2>
+                                <div class="inline-elements background">
+
+                                    <div class="mini-form-row">
+                                        <label for="size">Group size:</label>
+                                        <select id="size" class="select your-group">
+                                            <option value="0" selected="selected">Select</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="mini-form-row">
+                                        <label for="date">Date</label>
+                                        <input type="text" id="date" value="" placeholder="Date" class="your-date" readonly />
+                                    </div>
+
+                                    <div class="mini-form-row">
+                                        <label for="rounds">Rounds of golf</label>
+                                        <select id="rounds" class="select your-rounds">
+                                            <option value="0" selected="selected">Select</option>
+                                            <option value="1">1</option>
+                                            <option value="3">3</option>
+                                            <option value="9">9</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copy short-header">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <h2><span>Step 2 :</span> Golf Extras</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copy">
+                        <div class="row">
+                            <div class="col-sm-4 col-xs-6">
+
+                                <div class="addable-item inline-elements">
+                                    <h4 class="header">On course PGA Pro lesson</h4>
+                                    <img src="images/cms/customise-image-1.png" class="hero" alt="" />
+                                    <div class="details">
+                                        <div class="description">
+                                            <p>Stuff and ingredients and stuff, some more words</p>
+                                        </div>
+
+                                        <div class="action">
+                                            <label for="course">
+                                                <span class="add">Add to cart: <span class="glyphicon glyphicon-ok-circle icon" aria-hidden="true"></span></span>
+                                                <span class="remove">Remove from cart: <span class="glyphicon glyphicon-remove-circle icon" aria-hidden="true"></span></span>
+                                                <input type="checkbox" name="course" value="yes" id="course" />
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-4 col-xs-6">
+
+                                <div class="addable-item inline-elements">
+                                    <h4 class="header">In Studio PGA Pro lesson</h4>
+                                    <img src="images/cms/customise-image-2.png" class="hero" alt="" />
+                                    <div class="details">
+                                        <div class="description">
+                                            <p>Stuff and ingredients and stuff, some more words</p>
+                                        </div>
+                                        <div class="action">
+                                            <label for="studio">
+                                                <span class="add">Add to cart: <span class="glyphicon glyphicon-ok-circle icon" aria-hidden="true"></span></span>
+                                                <span class="remove">Remove from cart: <span class="glyphicon glyphicon-remove-circle icon" aria-hidden="true"></span></span>
+                                                <input type="checkbox" name="studio" value="yes" id="studio" />
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-4 col-xs-6">
+
+                                <div class="addable-item inline-elements">
+                                    <h4 class="header">Trackman Simulator:</h4>
+                                    <img src="images/cms/customise-image-3.png" class="hero" alt="" />
+                                    <div class="details">
+                                        <div class="description">
+                                            <p>Super realistic, you'd think you were there.</p>
+                                        </div>
+                                        <div class="action">
+                                            <label for="simulator">
+                                                <span class="add">Add to cart: <span class="glyphicon glyphicon-ok-circle icon" aria-hidden="true"></span></span>
+                                                <span class="remove">Remove from cart: <span class="glyphicon glyphicon-remove-circle icon" aria-hidden="true"></span></span>
+                                                <input type="checkbox" name="simulator" value="yes" id="simulator" />
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-6">
+
+                                <div class="addable-item inline-elements">
+                                    <h4 class="header">Buggy hire:</h4>
+                                    <img src="images/cms/customise-image-4.png" class="hero" alt="" />
+                                    <div class="details">
+                                        <div class="description">
+                                            <p>Because it is just too far to walk, trust me!</p>
+                                        </div>
+                                        <div class="action">
+                                            <label for="buggy">
+                                                <span class="add">Add to cart: <span class="glyphicon glyphicon-ok-circle icon" aria-hidden="true"></span></span>
+                                                <span class="remove">Remove from cart: <span class="glyphicon glyphicon-remove-circle icon" aria-hidden="true"></span></span>
+                                                <input type="checkbox" name="buggy" value="yes" id="buggy" />
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-6">
+                                <div class="addable-item inline-elements">
+                                    <h4 class="header">Trolly hire:</h4>
+                                    <img src="images/cms/customise-image-5.png" class="hero" alt="" />
+                                    <div class="details">
+                                        <div class="description">
+                                            <p>Because it is just too far to walk, trust me!</p>
+                                        </div>
+                                        <div class="action">
+                                            <label for="trolly">
+                                                <span class="add">Add to cart: <span class="glyphicon glyphicon-ok-circle icon" aria-hidden="true"></span></span>
+                                                <span class="remove">Remove from cart: <span class="glyphicon glyphicon-remove-circle icon" aria-hidden="true"></span></span>
+                                                <input type="checkbox" name="trolly" value="yes" id="trolly" />
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-6">
+                                <div class="addable-item inline-elements">
+                                    <h4 class="header">Taxi service:</h4>
+                                    <img src="images/cms/customise-image-6.png" class="hero" alt="" />
+                                    <div class="details">
+                                        <div class="description">
+                                            <p>Because it is just too far to walk, trust me!</p>
+                                        </div>
+                                        <div class="action">
+                                            <label for="taxi">
+                                                <span class="add">Add to cart: <span class="glyphicon glyphicon-ok-circle icon" aria-hidden="true"></span></span>
+                                                <span class="remove">Remove from cart: <span class="glyphicon glyphicon-remove-circle icon" aria-hidden="true"></span></span>
+                                                <input type="checkbox" name="taxi" value="yes" id="taxi" />
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copy short-header">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <h2><span>Step 3 :</span> Refreshments</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copy">
+                        <div class="row">
+                            <div class="col-sm-4 col-xs-6">
+
+                                <div class="addable-item inline-elements">
+                                    <h4 class="header">&pound;10 Breakfast</h4>
+                                    <img src="images/cms/customise-image-7.png" class="hero" alt="" />
+                                    <div class="details">
+                                        <div class="description">
+                                            <p>Stuff and ingredients and stuff, some more words</p>
+                                        </div>
+                                        <div class="action">
+                                            <label for="breakfast-1">
+                                                <span class="add">Add to cart: <span class="glyphicon glyphicon-ok-circle icon" aria-hidden="true"></span></span>
+                                                <span class="remove">Remove from cart: <span class="glyphicon glyphicon-remove-circle icon" aria-hidden="true"></span></span>
+                                                <input type="checkbox" name="breakfast" value="breakfast-1" id="breakfast-1" data-exclusive="breakfast" />
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-4 col-xs-6">
+
+                                <div class="addable-item inline-elements">
+                                    <h4 class="header">&pound;15 Breakfast</h4>
+                                    <img src="images/cms/customise-image-8.png" class="hero" alt="" />
+                                    <div class="details">
+                                        <div class="description">
+                                            <p>Stuff and ingredients and stuff, some more words</p>
+                                        </div>
+                                        <div class="action">
+                                            <label for="breakfast-2">
+                                                <span class="add">Add to cart: <span class="glyphicon glyphicon-ok-circle icon" aria-hidden="true"></span></span>
+                                                <span class="remove">Remove from cart: <span class="glyphicon glyphicon-remove-circle icon" aria-hidden="true"></span></span>
+                                                <input type="checkbox" name="breakfast" value="breakfast-2" id="breakfast-2" data-exclusive="breakfast" />
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-4 col-xs-6">
+
+                                <div class="addable-item inline-elements">
+                                    <h4 class="header">&pound;25 Breakfast</h4>
+                                    <img src="images/cms/customise-image-9.png" class="hero" alt="" />
+                                    <div class="details">
+                                        <div class="description">
+                                            <p>Super realistic, you'd think you were there.</p>
+                                        </div>
+                                        <div class="action">
+                                            <label for="breakfast-3">
+                                                <span class="add">Add to cart: <span class="glyphicon glyphicon-ok-circle icon" aria-hidden="true"></span></span>
+                                                <span class="remove">Remove from cart: <span class="glyphicon glyphicon-remove-circle icon" aria-hidden="true"></span></span>
+                                                <input type="checkbox" name="breakfast" value="breakfast-3" id="breakfast-3" data-exclusive="breakfast" />
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-6">
+
+                                <div class="addable-item inline-elements">
+                                    <h4 class="header">&pound;10 Lunch menu</h4>
+                                    <img src="images/cms/customise-image-10.png" class="hero" alt="" />
+                                    <div class="details">
+                                        <div class="description">
+                                            <p>Nice yummy lunch, hmmm</p>
+                                        </div>
+                                        <div class="action">
+                                            <label for="lunch-1">
+                                                <span class="add">Add to cart: <span class="glyphicon glyphicon-ok-circle icon" aria-hidden="true"></span></span>
+                                                <span class="remove">Remove from cart: <span class="glyphicon glyphicon-remove-circle icon" aria-hidden="true"></span></span>
+                                                <input type="checkbox" name="lunch" value="lunch-1" id="lunch-1" data-exclusive="lunch" />
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-6">
+                                <div class="addable-item inline-elements">
+                                    <h4 class="header">&pound;15 Lunch menu</h4>
+                                    <img src="images/cms/customise-image-11.png" class="hero" alt="" />
+                                    <div class="details">
+                                        <div class="description">
+                                            <p>Costs a bit more than Menu 1</p>
+                                        </div>
+                                        <div class="action">
+                                            <label for="lunch-2">
+                                                <span class="add">Add to cart: <span class="glyphicon glyphicon-ok-circle icon" aria-hidden="true"></span></span>
+                                                <span class="remove">Remove from cart: <span class="glyphicon glyphicon-remove-circle icon" aria-hidden="true"></span></span>
+                                                <input type="checkbox" name="lunch" value="lunch-2" id="lunch-2" data-exclusive="lunch" />
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-6">
+                                <div class="addable-item inline-elements">
+                                    <h4 class="header">&pound;25 Lunch menu</h4>
+                                    <img src="images/cms/customise-image-12.png" class="hero" alt="" />
+                                    <div class="details">
+                                        <div class="description">
+                                            <p>All the trimmings</p>
+                                        </div>
+                                        <div class="action">
+                                            <label for="lunch-3">
+                                                <span class="add">Add to cart: <span class="glyphicon glyphicon-ok-circle icon" aria-hidden="true"></span></span>
+                                                <span class="remove">Remove from cart: <span class="glyphicon glyphicon-remove-circle icon" aria-hidden="true"></span></span>
+                                                <input type="checkbox" name="lunch" value="lunch-3" id="lunch-3" data-exclusive="lunch" />
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-6">
+
+                                <div class="addable-item inline-elements">
+                                    <h4 class="header">Complimentary snack</h4>
+                                    <img src="images/cms/customise-image-13.png" class="hero" alt="" />
+                                    <div class="details">
+                                        <div class="description">
+                                            <p>For when you are feeling peckish after a long match</p>
+                                        </div>
+                                        <div class="action">
+                                            <label for="snacks">
+                                                <span class="add">Add to cart: <span class="glyphicon glyphicon-ok-circle icon" aria-hidden="true"></span></span>
+                                                <span class="remove">Remove from cart: <span class="glyphicon glyphicon-remove-circle icon" aria-hidden="true"></span></span>
+                                                <input type="checkbox" name="snacks" value="yes" id="snacks" />
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-6">
+                                <div class="addable-item inline-elements">
+                                    <h4 class="header">Dine in pod</h4>
+                                    <img src="images/cms/customise-image-14.png" class="hero" alt="" />
+                                    <div class="details">
+                                        <div class="description">
+                                            <p>Makes the food taste just that little bit better</p>
+                                        </div>
+                                        <div class="action">
+                                            <label for="pod">
+                                                <span class="add">Add to cart: <span class="glyphicon glyphicon-ok-circle icon" aria-hidden="true"></span></span>
+                                                <span class="remove">Remove from cart: <span class="glyphicon glyphicon-remove-circle icon" aria-hidden="true"></span></span>
+                                                <input type="checkbox" name="pod" value="yes" id="pod" />
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="copy short-header">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <h2><span>Step 4 :</span> Enquire</h2>
+                                <div class="step-title">
+                                    <h3>Check your selection and add any notes</h3>
+                                </div>
+
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="customise-table">
+                                    <tr>
+                                        <th scope="col">Photo</th>
+                                        <th scope="col">Description</th>
+                                        <th scope="col">Price</th>
+                                    </tr>
+                                    <tr class="group">
+                                        <td class="image"><img src="images/cms/customise-image-thumb.png" width="77" height="46" alt="" /></td>
+                                        <td>Group of <span class="table-group">0</span> to play <span class="table-rounds">0</span> rounds of Golf on the <span class="table-date">no date</span></td>
+                                        <td class="price">&pound;00.00</td>
+                                    </tr>
+                                    <tr class="course display-none">
+                                        <td class="image"><img src="images/cms/customise-image-1-thumb.png" width="77" height="46" alt="" /></td>
+                                        <td>On course PGA Pro lesson</td>
+                                        <td class="price">&pound;00.00</td>
+                                    </tr>
+                                    <tr class="studio display-none">
+                                        <td class="image"><img src="images/cms/customise-image-2-thumb.png" width="77" height="46" alt="" /></td>
+                                        <td>In studio PGA Pro lesson</td>
+                                        <td class="price">&pound;00.00</td>
+                                    </tr>
+                                    <tr class="simulator display-none">
+                                        <td class="image"><img src="images/cms/customise-image-3-thumb.png" width="77" height="46" alt="" /></td>
+                                        <td>Simulator Trackman</td>
+                                        <td class="price">&pound;00.00</td>
+                                    </tr>
+                                    <tr class="buggy display-none">
+                                        <td class="image"><img src="images/cms/customise-image-4-thumb.png" width="77" height="46" alt="" /></td>
+                                        <td>Buggy hire</td>
+                                        <td class="price">&pound;00.00</td>
+                                    </tr>
+                                    <tr class="trolly display-none">
+                                        <td class="image"><img src="images/cms/customise-image-5-thumb.png" width="77" height="46" alt="" /></td>
+                                        <td>Trolly hire</td>
+                                        <td class="price">&pound;00.00</td>
+                                    </tr>
+                                    <tr class="taxi display-none">
+                                        <td class="image"><img src="images/cms/customise-image-6-thumb.png" width="77" height="46" alt="" /></td>
+                                        <td>Taxi service</td>
+                                        <td class="price">&pound;00.00</td>
+                                    </tr>
+                                    <tr class="breakfast-1 display-none">
+                                        <td class="image"><img src="images/cms/customise-image-7-thumb.png" width="77" height="46" alt="" /></td>
+                                        <td>Breakfast 1</td>
+                                        <td class="price">&pound;00.00</td>
+                                    </tr>
+                                    <tr class="breakfast-2 display-none">
+                                        <td class="image"><img src="images/cms/customise-image-8-thumb.png" width="77" height="46" alt="" /></td>
+                                        <td>Breakfast 2</td>
+                                        <td class="price">&pound;00.00</td>
+                                    </tr>
+                                    <tr class="breakfast-3 display-none">
+                                        <td class="image"><img src="images/cms/customise-image-9-thumb.png" width="77" height="46" alt="" /></td>
+                                        <td>Breakfast 3</td>
+                                        <td class="price">&pound;00.00</td>
+                                    </tr>
+                                    <tr class="lunch-1 display-none">
+                                        <td class="image"><img src="images/cms/customise-image-10-thumb.png" width="77" height="46" alt="" /></td>
+                                        <td>Lunch menu 1</td>
+                                        <td class="price">&pound;00.00</td>
+                                    </tr>
+                                    <tr class="lunch-2 display-none">
+                                        <td class="image"><img src="images/cms/customise-image-11-thumb.png" width="77" height="46" alt="" /></td>
+                                        <td>Lunch menu 2</td>
+                                        <td class="price">&pound;00.00</td>
+                                    </tr>
+                                    <tr class="lunch-3 display-none">
+                                        <td class="image"><img src="images/cms/customise-image-12-thumb.png" width="77" height="46" alt="" /></td>
+                                        <td>Lunch menu 3</td>
+                                        <td class="price">&pound;00.00</td>
+                                    </tr>
+                                    <tr class="snacks display-none">
+                                        <td class="image"><img src="images/cms/customise-image-13-thumb.png" width="77" height="46" alt="" /></td>
+                                        <td>Complimentary snacks</td>
+                                        <td class="price">&pound;00.00</td>
+                                    </tr>
+                                    <tr class="pod display-none">
+                                        <td class="image"><img src="images/cms/customise-image-14-thumb.png" width="77" height="46" alt="" /></td>
+                                        <td>Dine in pod</td>
+                                        <td class="price">&pound;00.00</td>
+                                    </tr>
+                                    <tr class="total">
+                                        <td class="image">&nbsp;</td>
+                                        <td><strong>Total:</strong> *10% deposit required when confirming booking with staff on phone.</td>
+                                        <td class="price">&pound;<span id="total-price">00.00</span></td>
+                                    </tr>
+                                </table>
+
+                                <textarea id="customise-textarea" class="textarea" placeholder="Add any note here"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-box">
+                            <div class="text">
+                                <p>Email enquiry to self and Craibstone</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="form-row">
+                                        <label for="name">Name:</label>
+                                        <input type="text" value="" class="input" id="name" />
+                                        <span class="error">Please fill in a name</span>
+                                    </div>
+                                    <div class="form-row error">
+                                        <label for="email">Email address:</label>
+                                        <input type="email" value="" class="input" id="email" />
+                                        <span class="error">Please fill in an email address</span>
+                                    </div>
+                                    <div class="form-row">
+                                        <label for="phone">Phone:</label>
+                                        <input type="text" value="" class="input" id="phone" />
+                                    </div>
+                                    <div class="form-row">
+                                        <label for="company">Company (optional):</label>
+                                        <input type="text" value="" class="input" id="company" />
+                                    </div>
+
+                                    <div class="cleft"></div>
+                                    <div class="form-row button-row">
+                                        <button type="submit" value="Submit enquiry" class="sumbit-button">Submit enquiry <span class="glyphicon glyphicon-triangle-right icon"></span></button>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </form>
+        </div>
+        <div class="section">
+            <div class="pod">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="copy">
+                            <div class="footer-navigation">
+                                <ul>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="privacy.html">Privacy</a></li>
+                                    <li><a href="Ts-and-Cs.html">T&amp;Cs</a></li>
+                                    <li><a href="cookies.html">Cookies</a></li>
+                                    <li><a href="sitemap.html">Sitemap</a></li>
+                                </ul>
+                                <div class="cright"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="auxiliary-footer-navigation">
+                            <div class="copy">
+                                <ul>
+                                    <li><a href="tel:01224567890"><span>T:</span> 01224&nbsp;567&nbsp;890</a></li>
+                                    <li><a href="mailto:golf@marshall-leisure.co.uk" class="text-links">Email us</a></li>
+                                </ul>
+                            </div>
+                            <a href="#" class="stand-alone icon-facebook">Facebook</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav id="menu" aria-hidden="true" class="display-none">
+        <ul>
+            <li class="close-mobile-navigation-link"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></li>
+            <li class="home"><a href="index.html" class="primary-navigation-link">Home</a></li>
+            <li class="golf"><a href="golf.html" class="primary-navigation-link">Golf</a>
+                <ul class="secondary-navigation vertical">
+                    <li><a href="courses.html">Courses</a>
+                        <ul class="third-level">
+                            <li><a href="holes-1-9.html">Holes 1-9</a></li>
+                            <li><a href="holes-10-18.html">Holes 10-18</a></li>
+                            <li><a href="hole-19.html">19th Hole</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="members.html">Members</a></li>
+                    <li><a href="visitors.html">Visitors</a></li>
+                    <li><a href="diary.html">Diary</a></li>
+                    <li><a href="information.html">Info</a>
+                        <ul class="third-level">
+                            <li><a href="scorecard.html">Scorecard</a></li>
+                            <li><a href="record.html">Course Record</a></li>
+                            <li><a href="results.html">Competition Results</a></li>
+                            <li><a href="downloads.html">Downloadable documents</a></li>
+                        </ul></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="shop.html">Clubhouse/Shop</a></li>
+                </ul>
+            </li>
+            <li class="bistro"><a href="bistro.html" class="primary-navigation-link">Brimmond Bistro</a>
+                <ul class="secondary-navigation">
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                    <li><a href="news.html">News &amp; Offers</a></li>
+                    <li><a href="groups.html">Groups</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="walking.html">Walking</a></li>
+                </ul>
+            </li>
+            <li class="studio"><a href="studio.html" class="primary-navigation-link">Golf Studio</a>
+                <ul class="secondary-navigation">
+                    <li><a href="booking.html">Bookings</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="news-and-tips.html">News &amp; Tips</a></li>
+                    <li><a href="studio-gallery.html">Gallery</a></li>
+                    <li><a href="studio-testimonials.html">Testimonials</a></li>
+                </ul>
+            </li>
+            <li class="customise"><a href="customise.html" class="primary-navigation-link">Customise your day</a></li>
+            <li class="footer-link"><a href="about.html">About</a></li>
+            <li class="footer-link"><a href="contact.html">Contact</a></li>
+            <li class="footer-link"><a href="privacy.html">Privacy</a></li>
+            <li class="footer-link"><a href="Ts-and-Cs.html">T&amp;Cs</a></li>
+            <li class="footer-link"><a href="cookies.html">Cookies</a></li>
+            <li class="footer-link"><a href="sitemap.html">Sitemap</a></li>
+        </ul>
+    </nav>
+
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/vendor/moment.min.js"></script>
+    <script src="js/vendor/pikaday.js"></script>
+    <script src="js/vendor/jquery.mmenu.min.all.js"></script>
+    <script src="js/craibstone.js"></script>
+</body>
+</html>

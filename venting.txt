@@ -1,0 +1,35 @@
+Overall
+================
+Design mobile first, or more precisely all 3 at the same time, really important.
+Everything is fixed budget, be prepared to compromise.
+Nothing can ever be pixel perfect on all devices everywhere.
+
+
+Images
+================
+- Limit the different sizes of CMS driven images, otherwise it means lots more effort from client or backend developer, usually both.
+- Please try to design with same image ratio on mobile and desktop, no swapping images on the fly.
+
+
+Copy
+=================
+- Try to limit types of fonts used, confuses uses as to hierarchy of content
+- Avoid headers and links sharing colours, unless that header is a link
+- The more the variety of fonts, the longer the download time and bandwidth usage
+- Headers with 2 colors will be difficult in CMS
+
+
+Layout
+================
+- If you can, avoid layout with fixed height copy, this will not work when in CMS
+- Always use webFonts to design your icons, not images as they look terrible on high res screens http://glyphicons.bootstrapcheatsheets.com and http://fontawesome.io/cheatsheet
+- Try to measure accurately, HTML is all maths, we divide by 3 or 4 etc, 1 pixel out in PSD can become 4 in HTML
+- Use the same size and dimensions for elements from page to page, e.g form fields, easier to code and easier to understand by user
+- Avoid using same design for different meaning, e.g radio button and checkbox should look different
+- Consistency, no green input text on one page and black on another
+- Less 'click here/more' links, back for SEO and accessibility
+
+
+PSD
+================
+- Clear labeling of on/off states, due to development being done remotely

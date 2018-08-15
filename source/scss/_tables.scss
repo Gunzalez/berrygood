@@ -1,0 +1,159 @@
+
+.copy-table {
+    border-bottom: 1px dotted $clr-gray-4;
+    margin-bottom: 30px;
+
+    td {
+        vertical-align: top;
+        padding-bottom: 15px;
+
+        &.price {
+            padding-right: 20px;
+            color: $clr-green-3;
+            font-weight: bold;
+            width: 60px;
+        }
+    }
+
+    &.no-table-header {
+        .table-header {
+            display: none;
+        }
+    }
+}
+
+.stripped-table {
+    tr {
+        &:nth-child(even){
+            background-color: $clr-gray-5;
+        }
+    }
+}
+
+.download-table {
+    tr {
+        td, th {
+            vertical-align: middle;
+            padding: 10px 15px;
+        }
+
+        th {
+            height: 5rem;
+        }
+    }
+
+    a {
+        display: block;
+    }
+
+    @media (max-width: $breakpoint2){
+        tr {
+            td {
+                display: block;
+                padding: 2px 10px;
+
+                &:first-child {
+                    font-size: 1.7rem;
+                    font-weight: bold;
+                    padding: 5px 10px;
+                }
+
+                &:nth-last-child(1){
+                    padding-bottom: 8px;
+                }
+            }
+
+            th {
+                display: none;
+            }
+        }
+    }
+
+    .download-imagery {
+        background: url("../images/bg-download-link.png") top right no-repeat;
+    }
+}
+
+.diary-table {
+
+    tr {
+        background: #f3f3f3;
+
+        &.bg-clr-green {
+            background: $clr-green-4;
+        }
+
+        th, td {
+            padding: 10px 30px 10px 10px;
+            vertical-align: top;
+            border-left: 2px solid #ffffff;
+            border-bottom: 2px solid #ffffff;
+            font-weight: normal;
+
+            &:first-child {
+                border-left: none;
+            }
+
+            &.event {
+                width: 100%;
+                padding: 10px;
+            }
+
+            &.category {
+                white-space: nowrap;
+
+                @media (max-width: $breakpoint2){
+                    border-bottom: 10px solid #ffffff;
+                }
+
+            }
+
+            &.ladies {
+                background: $clr-purple;
+                color: #ffffff;
+            }
+
+            &.mens {
+                background: $clr-blue-2;
+                color: #ffffff;
+            }
+
+            &.senior {
+                background: $clr-green;
+                color: #ffffff;
+            }
+
+            &.junior {
+                background: $clr-brown;
+                color: #ffffff;
+            }
+
+            &.open {
+                background: #e0e0e0;
+                color: $clr-gray-2;
+            }
+        }
+
+        th {
+            background-color: $clr-gray-2;
+            color: #ffffff;
+        }
+    }
+
+    @media (max-width: $breakpoint2){
+        tr {
+            th {
+                display: none;
+            }
+
+            td {
+                display: block;
+                border-left: none;
+            }
+        }
+    }
+}
+
+.time-selection {
+    margin: 10px 0;
+}
