@@ -2,7 +2,7 @@
 var gulp  = require('gulp');
 var gutil = require('gulp-util');
 var jshint = require('gulp-jshint');
-var sass = require('gulp-sass');
+// var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 
 // configure the jshint task
@@ -36,7 +36,7 @@ gulp.task('browserSync', function() {
 
 // watch changes to HTML, CSS and JS,
 gulp.task('watch', ['browserSync'], function (){
-    gulp.watch('source/scss/**/*.scss', ['sass']);
+    // gulp.watch('source/scss/**/*.scss', ['sass']);
     gulp.watch('website/js/*.js', ['jshint']);
     gulp.watch('website/*.html', browserSync.reload);
 });
