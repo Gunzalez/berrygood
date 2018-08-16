@@ -161,11 +161,18 @@
     };
 
     // main init
-    // $(document).ready(function () {
-    //     berrygood.init();
-    //     $(window).scroll(function (event) {
-    //         berrygood.scrollEvents();
-    //     });
-    // });
+    $(document).ready(function () {
+        //berrygood.init();
+        $('.owl-carousel').owlCarousel({
+            items:1,
+            margin:10,
+            autoHeight:true,
+            nav: true,
+            loop: true
+        });
+        $(window).scroll(function (event) {
+            //berrygood.scrollEvents();
+        });
+    });
 
 }(jQuery, window));

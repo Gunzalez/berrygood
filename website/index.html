@@ -8,8 +8,11 @@
 
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/berrygood.css" rel="stylesheet">
-    <link href="js/vendor/jquery.mmenu.all.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="js/vendor/owl.carousel.min.css">
+    <link rel="stylesheet" href="js/vendor/owl.theme.default.css">
+    <link rel="stylesheet" href="js/vendor/jquery.mmenu.all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -24,19 +27,74 @@
 <body>
 
     <div class="page">
-        <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="social-media">
+                        <li><a href="" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="" target="_blank"><i class="fab fa-pinterest-p"></i></a></li>
+                        <li><a href="" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="" target="_blank"><i class="fas fa-bicycle"></i></a></li>                     
+                    </ul>
+                </div>
+                <div class="col-lg-12">
+                    <div class="main-navigation">
+                        <a href="/"><img src="images/logo-berrygood.png" alt="site logo - Love Fresh Berries" /></a>
+                        <ul>
+                            <li><a href="">About</a></li>                   
+                            <li><a href="">Berry Facts</a></li>                   
+                            <li><a href="">Berry Growers</a></li>                   
+                            <li><a href="">Health Facts</a></li>                   
+                            <li><a href="">Recipes</a></li>                   
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="hero-carousel">
+
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="owl-carousel secondary-carousel">
+                            <div class="slide"> 
+                                <h2>What do you call a blackberry?</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisrerit ex, ac finibdunt et. Donec vel tincibitur bibendum leo eget maximus rutrum.</p>
+                                <button class="btn">Read more</button>    
+                            </div>
+                            <div class="slide"> 
+                                <h2>Binging on Twin Peaks: The Return</h2>
+                                <p>It is super weird, like I have nevere seen before. Give me some sugar she said.</p>
+                                <button class="btn">Read more</button>    
+                            </div>
+                            <div class="slide"> 
+                                <h2>Are you smoking a cigarette?</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisrerit ex, ac finibdunt bitur bibendum leo eget maximus rutrum.</p>
+                                <button class="btn">Read more</button>    
+                            </div>
+                            <div class="slide"> 
+                                <h2>Playing music very loadly in the club.</h2>
+                                <p>She may be on to something here.</p>
+                                <button class="btn">Read more</button>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- <div class="section">
             <div class="pod">
                 <div class="row top-row">
                     <h1 id="home"><a href="index.html"><img src="images/logo-craibstone-golf.png" class="logo-golf" alt="Craibstone Golf"></a></h1>
                     <div class="col-xs-12">
-                        <ul class="auxiliary-navigation">
-                            <li><a href="tel:01224567890" class="text-links"><span>t:</span> 01224&nbsp;567&nbsp;890</a></li>
-                            <li><a href="mailto:golf@marshall-leisure.co.uk" class="text-links"><span>e:</span> golf@marshall-leisure.co.uk</a></li>
-                            <li><a href="index.html" class="home-link home">Home</a></li>
-                            <li><a href="#" class="social-media pinterest">Pinterest</a></li>
-                            <li><a href="#" class="social-media facebook">Facebook</a></li>
-                            <li><a href="#" class="social-media google">Google</a></li>
-                        </ul>
+                        
                         <div class="navigation-bar">
                             <ul class="primary-navigation hover-on-desktop-only">
                                 <li class="golf"><a href="golf.html" class="primary-navigation-link">Golf</a>
@@ -137,69 +195,21 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
     <nav id="menu" aria-hidden="true" class="display-none">
-    <ul>
-        <li class="close-mobile-navigation-link"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></li>
-        <li class="home"><a href="index.html" class="primary-navigation-link">Home</a></li>
-        <li class="golf"><a href="golf.html" class="primary-navigation-link">Golf</a>
-            <ul class="secondary-navigation vertical">
-                <li><a href="courses.html">Courses</a>
-                    <ul class="third-level">
-                        <li><a href="holes-1-9.html">Holes 1-9</a></li>
-                        <li><a href="holes-10-18.html">Holes 10-18</a></li>
-                        <li><a href="hole-19.html">19th Hole</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                    </ul>
-                </li>
-                <li><a href="members.html">Members</a></li>
-                <li><a href="visitors.html">Visitors</a></li>
-                <li><a href="diary.html">Diary</a></li>
-                <li><a href="information.html">Info</a>
-                    <ul class="third-level">
-                        <li><a href="scorecard.html">Scorecard</a></li>
-                        <li><a href="record.html">Course Record</a></li>
-                        <li><a href="results.html">Competition Results</a></li>
-                        <li><a href="downloads.html">Downloadable documents</a></li>
-                    </ul></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="shop.html">Clubhouse/Shop</a></li>
-            </ul>
-        </li>
-        <li class="bistro"><a href="bistro.html" class="primary-navigation-link">Brimmond Bistro</a>
-            <ul class="secondary-navigation">
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="reservations.html">Reservations</a></li>
-                <li><a href="news.html">News &amp; Offers</a></li>
-                <li><a href="groups.html">Groups</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="testimonials.html">Testimonials</a></li>
-                <li><a href="walking.html">Walking</a></li>
-            </ul>
-        </li>
-        <li class="studio"><a href="studio.html" class="primary-navigation-link">Golf Studio</a>
-            <ul class="secondary-navigation">
-                <li><a href="booking.html">Bookings</a></li>
-                <li><a href="facilities.html">Facilities</a></li>
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="news-and-tips.html">News &amp; Tips</a></li>
-                <li><a href="studio-gallery.html">Gallery</a></li>
-                <li><a href="studio-testimonials.html">Testimonials</a></li>
-            </ul>
-        </li>
-        <li class="customise"><a href="customise.html" class="primary-navigation-link">Customise your day</a></li>
-        <li class="footer-link"><a href="about.html">About</a></li>
-        <li class="footer-link"><a href="contact.html">Contact</a></li>
-        <li class="footer-link"><a href="privacy.html">Privacy</a></li>
-        <li class="footer-link"><a href="Ts-and-Cs.html">T&amp;Cs</a></li>
-        <li class="footer-link"><a href="cookies.html">Cookies</a></li>
-        <li class="footer-link"><a href="sitemap.html">Sitemap</a></li>
-    </ul>
-</nav>
+        <ul>
+            <li><a href="">About</a></li>                   
+            <li><a href="">Berry Facts</a></li>                   
+            <li><a href="">Berry Growers</a></li>                   
+            <li><a href="">Health Facts</a></li>                   
+            <li><a href="">recipes</a></li>                   
+        </ul>
+    </nav>
 
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
     <script src="js/vendor/jquery.mmenu.min.all.js"></script>
-    <script src="js/craibstone.js"></script>
+    <script src="js/vendor/owl.carousel.min.js"></script>
+    <script src="js/berrygood.js"></script>
 </body>
 </html>
