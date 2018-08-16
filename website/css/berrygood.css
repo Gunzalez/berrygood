@@ -306,6 +306,15 @@
 .display-none {
   display: none; }
 
+.devices-wide {
+  display: none; }
+
+@media (min-width: 768px) {
+  .devices-wide {
+    display: block; }
+  .devices-narrow {
+    display: none; } }
+
 body {
   background: #ffffff;
   color: #333333;
@@ -331,7 +340,9 @@ body {
     color: #ef2463; }
 
 .main-navigation {
-  position: relative; }
+  text-align: right;
+  position: relative;
+  height: 100px; }
   .main-navigation > a {
     position: absolute;
     top: -15px;
@@ -340,10 +351,14 @@ body {
     .main-navigation > a img {
       display: block;
       width: 102px; }
+  .main-navigation .devices-wide,
+  .main-navigation .devices-narrow {
+    position: absolute;
+    bottom: 0;
+    right: 0; }
   .main-navigation ul {
     list-style: none;
     margin: 0;
-    padding: 50px 0 0 0;
     width: 100%;
     text-align: right; }
     .main-navigation ul li {
@@ -356,13 +371,15 @@ body {
           padding-right: 0; }
     .main-navigation ul a {
       display: inline-block;
-      padding: 15px 10px;
+      padding: 15px 7px;
       color: #8e2b3d;
       font-weight: bold;
       font-size: 16px; }
       .main-navigation ul a:hover {
         text-decoration: none;
         color: #ef2463; }
+  .main-navigation .mobile-navigation-trigger {
+    font-size: 3rem; }
 
 .hero-carousel {
   height: 400px;

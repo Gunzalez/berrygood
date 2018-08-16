@@ -18,6 +18,20 @@ $brand-red:         #8e2b3d;
     display: none;
 }
 
+.devices-wide {
+    display: none;
+}
+
+@media (min-width: $breakpoint2){
+    .devices-wide {
+        display: block;
+    }
+
+    .devices-narrow {
+        display: none;
+    }
+}
+
 body {
     background: #ffffff;
     color: $clr-gray-2;
@@ -52,8 +66,10 @@ body {
 }
 
 .main-navigation {
-    
+
+    text-align: right;    
     position: relative;
+    height: 100px;
 
     > a {
         position: absolute;
@@ -67,11 +83,18 @@ body {
         }
     }
 
+    .devices-wide,
+    .devices-narrow {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
     ul {
 
         list-style: none;
         margin: 0;
-        padding: 50px 0 0 0;
+        // padding: 50px 0 0 0;
         width: 100%;
         text-align: right;
 
@@ -90,7 +113,7 @@ body {
 
         a {
             display: inline-block;
-            padding: 15px 10px;
+            padding: 15px 7px;
             color: $brand-red;
             font-weight: bold;
             font-size: 16px;
@@ -102,6 +125,9 @@ body {
         }
     }
 
+    .mobile-navigation-trigger {
+        font-size: 3rem;
+    }
 }
 
 .hero-carousel {
