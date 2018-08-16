@@ -28,6 +28,14 @@ p {
     }
 }
 
+a {
+    color: $clr-green;
+    @include transition-background();
+    &:hover {
+        color: $clr-green-3;
+    }
+}
+
 // .section {
 //     border-bottom: 10px solid #ffffff;
 //     &.background {
