@@ -148,30 +148,25 @@ body {
 
     .owl-prev,
     .owl-next {
+        transition: all 0.25s;
         position: absolute;
-        width: 20px;
-        height: 20px;
-        background: red !important;
+        width: 40px;
+        height: 40px;
+        background: $brand-red !important;
         display: block;
-        top: 0;
+        border-radius: 50%;
+        top: 50%;
+        margin-top: -20px;
         left: 0;
+
+        &:hover {
+            background: $brand-pink !important;
+        }
     }
     
     .owl-next {
-        top: 0;
         right: 0;
         left: auto;
-    }
-}
-
-.btn {
-    background: $brand-red;
-    color: #ffffff;
-    transition: all 0.25s;
-
-    &:hover {
-        background: $brand-pink;
-        color: #ffffff;
     }
 }
 

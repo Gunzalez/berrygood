@@ -47,6 +47,16 @@
 p {
   margin-bottom: 15px; }
 
+.btn {
+  background: #8e2b3d;
+  color: #ffffff;
+  transition: all 0.25s;
+  border-radius: 6px;
+  font-size: 1.6rem; }
+  .btn:hover {
+    background: #ef2463;
+    color: #ffffff; }
+
 .display-none {
   display: none; }
 
@@ -139,26 +149,23 @@ body {
 
 .secondary-carousel .owl-prev,
 .secondary-carousel .owl-next {
+  transition: all 0.25s;
   position: absolute;
-  width: 20px;
-  height: 20px;
-  background: red !important;
+  width: 40px;
+  height: 40px;
+  background: #8e2b3d !important;
   display: block;
-  top: 0;
+  border-radius: 50%;
+  top: 50%;
+  margin-top: -20px;
   left: 0; }
+  .secondary-carousel .owl-prev:hover,
+  .secondary-carousel .owl-next:hover {
+    background: #ef2463 !important; }
 
 .secondary-carousel .owl-next {
-  top: 0;
   right: 0;
   left: auto; }
-
-.btn {
-  background: #8e2b3d;
-  color: #ffffff;
-  transition: all 0.25s; }
-  .btn:hover {
-    background: #ef2463;
-    color: #ffffff; }
 
 .hero {
   width: 100%;
