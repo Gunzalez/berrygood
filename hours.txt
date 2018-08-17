@@ -5,8 +5,21 @@ Craibstone time spent (60 hours estimated)
 
 Preparation
 =================================================================================
-Set-up:                                                                 11 hours
-Furniture																3 hours
+Set-up:                                                                 3 hours
+Furniture + Homepage													10 hours
+
+
+
+
+
+
+
+
+
+
+
+
+
 Templates                                                               3 hours (starts...)
 Templates                                                               1.5 hours (main homepage)
 Templates                                                               5 hours (craibstone homepage)
