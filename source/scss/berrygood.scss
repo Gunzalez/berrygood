@@ -6,6 +6,8 @@ $breakpoint3:        480px;
 
 $brand-pink:        #ef2463;
 $brand-red:         #902d3f;
+$brand-black:       #282828;
+$brand-dark:        #333333;
 
 @import "colours";
 @import "mixins";
@@ -178,11 +180,14 @@ body {
 
 .pod {
     min-height: 290px;
-    background: #666666;
+    background: #4978cf;
     color: #FFFFFF;
     text-align: center;
     padding: 10px;
     margin-bottom: 15px;
+    -webkit-box-shadow: 0px 2px 15px 2px rgba(0,0,0,0.09);
+    -moz-box-shadow: 0px 2px 15px 2px rgba(0,0,0,0.09);
+    box-shadow: 0px 2px 15px 2px rgba(0,0,0,0.09);
 
     @media (min-width: $breakpoint2){
         margin-bottom: 30px;
@@ -192,11 +197,8 @@ body {
 .footer {
     height: 225px;
     position: relative;
-    border-bottom: 20px solid #dddddd;
-
+    border-bottom: 10px solid $brand-pink;
     background: $brand-red;
-
-
 
     ul {
         list-style: none;
@@ -238,6 +240,8 @@ body {
     }
 
     @media (min-width: $breakpoint2){
+
+        border-bottom: 20px solid #dddddd;
 
         ul {
             padding: 0;
@@ -290,110 +294,13 @@ body {
 
 // mobile navigation
 #menu {
-    background: $clr-green;
-    color: #ffffff;
-    font-family: $bodyFont;
+    background: #ffffff;
+    text-transform: uppercase;
 
-    .primary-navigation-link {
-        font-family: $headerFont;
-        font-size: 2.4rem;
-        padding: 15px 15px 12px 15px;
-        text-transform: uppercase;
-    }
-
-    .home {
-        a {
-            background: $clr-gray-3;
-        }
-    }
-
-    .bistro {
-        a {
-            background: $clr-green-2;
-        }
-    }
-
-    .studio {
-        a {
-            background: $clr-green-3;
-        }
-    }
-
-    .customise {
-        a {
-            background: $clr-red;
-            border-top: 1px solid $clr-green;
-        }
-    }
-
-    .secondary-navigation {
-        text-transform:  uppercase;
-        background: $clr-gray-2;
-    }
-
-    .third-level {
-        text-transform: uppercase;
-        background: $clr-gray-3;
-    }
-
-    li {
-        &:after {
-            content: none;
-        }
-
-        &.footer-link {
-            a {
-                padding: 10px 0 10px 20px;
-                font-size: 1.5rem;
-                text-transform: uppercase;
-                border-bottom: 1px solid $clr-green-2;
-            }
-
-            &:nth-last-child(1){
-                a {
-                    border-bottom: none;
-                }
-            }
-        }
-    }
-
-    &.mm-menu .mm-list > li > a.mm-subopen:after,
-    &.mm-menu .mm-list > li > a.mm-subclose:before {
-        border-color: #ffffff;
-    }
-
-    .mm-subtitle {
-        padding-top: 5px;
-
-        .mm-subclose {
-            padding-top: 45px;
-            color: #ffffff;
-            font-size: 1.8rem;
-        }
-    }
-
-    &.mm-menu .mm-list {
-        padding: 0;
-    }
-
-    .close-mobile-navigation-link {
-        background: #ffffff;
-        color: $clr-green;
-        text-align: right;
-        font-size: 2.0rem;
-        padding: 10px;
-
-        span {
-            display: block;
-        }
-    }
-
-    .mm-list a.mm-subopen {
-        width: 55px;
-    }
-
-    .mm-list a.mm-subopen:after {
-        right: 25px;
+    a {
+        color: $brand-black;
+        font-size: 1.5rem;
+        padding: 15px 40px;
     }
 }
 

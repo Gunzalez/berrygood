@@ -177,11 +177,14 @@ body {
 
 .pod {
   min-height: 290px;
-  background: #666666;
+  background: #4978cf;
   color: #FFFFFF;
   text-align: center;
   padding: 10px;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  -webkit-box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.09);
+  -moz-box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.09);
+  box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.09); }
   @media (min-width: 768px) {
     .pod {
       margin-bottom: 30px; } }
@@ -189,7 +192,7 @@ body {
 .footer {
   height: 225px;
   position: relative;
-  border-bottom: 20px solid #dddddd;
+  border-bottom: 10px solid #ef2463;
   background: #902d3f; }
   .footer ul {
     list-style: none;
@@ -217,6 +220,7 @@ body {
     text-align: center; }
   @media (min-width: 768px) {
     .footer {
+      border-bottom: 20px solid #dddddd;
       background: url("/images/bg-footer.png") top right no-repeat #902d3f; }
       .footer ul {
         padding: 0;
@@ -246,58 +250,9 @@ body {
       display: block; } }
 
 #menu {
-  background: #219837;
-  color: #ffffff;
-  font-family: "cabinmedium"; }
-  #menu .primary-navigation-link {
-    font-family: "Fjalla One", sans-serif;
-    font-size: 2.4rem;
-    padding: 15px 15px 12px 15px;
-    text-transform: uppercase; }
-  #menu .home a {
-    background: #282828; }
-  #menu .bistro a {
-    background: #16832a; }
-  #menu .studio a {
-    background: #0f7222; }
-  #menu .customise a {
-    background: #b73232;
-    border-top: 1px solid #219837; }
-  #menu .secondary-navigation {
-    text-transform: uppercase;
-    background: #333333; }
-  #menu .third-level {
-    text-transform: uppercase;
-    background: #282828; }
-  #menu li:after {
-    content: none; }
-  #menu li.footer-link a {
-    padding: 10px 0 10px 20px;
+  background: #ffffff;
+  text-transform: uppercase; }
+  #menu a {
+    color: #282828;
     font-size: 1.5rem;
-    text-transform: uppercase;
-    border-bottom: 1px solid #16832a; }
-  #menu li.footer-link:nth-last-child(1) a {
-    border-bottom: none; }
-  #menu.mm-menu .mm-list > li > a.mm-subopen:after,
-  #menu.mm-menu .mm-list > li > a.mm-subclose:before {
-    border-color: #ffffff; }
-  #menu .mm-subtitle {
-    padding-top: 5px; }
-    #menu .mm-subtitle .mm-subclose {
-      padding-top: 45px;
-      color: #ffffff;
-      font-size: 1.8rem; }
-  #menu.mm-menu .mm-list {
-    padding: 0; }
-  #menu .close-mobile-navigation-link {
-    background: #ffffff;
-    color: #219837;
-    text-align: right;
-    font-size: 2.0rem;
-    padding: 10px; }
-    #menu .close-mobile-navigation-link span {
-      display: block; }
-  #menu .mm-list a.mm-subopen {
-    width: 55px; }
-  #menu .mm-list a.mm-subopen:after {
-    right: 25px; }
+    padding: 15px 40px; }
