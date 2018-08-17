@@ -78,6 +78,7 @@ body {
         top: -15px;
         left: 0;
         display: block;
+        z-index: 10;
 
         img {
             display: block;
@@ -106,6 +107,7 @@ body {
 
             &:nth-last-child(1){
                 padding-right: 0;
+
                 a {
                     padding-right: 0;
                 }
@@ -119,7 +121,8 @@ body {
             font-weight: bold;
             font-size: 16px;
 
-            &:hover {
+            &:hover,
+            &.active {
                 text-decoration: none;
                 color: $brand-pink;
             }
@@ -170,6 +173,16 @@ body {
     .owl-next {
         right: 0;
         left: auto;
+    }
+}
+
+.introduction {
+    padding: 10px 80px;
+    text-align: center;
+    position: relative;
+
+    @media (max-width: $breakpoint2){
+        padding: 10px 50px;
     }
 }
 
@@ -283,6 +296,17 @@ body {
         display: block;
     }
 }
+
+.hero {
+    background-size: cover;
+    height: 360px;
+    background-position: center center;
+
+    &.recipes {
+        background-image: url('/images/berries-avocado-and-banana.jpg');
+    }
+}
+
 
 
 

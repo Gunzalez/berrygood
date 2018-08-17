@@ -109,7 +109,8 @@ body {
     position: absolute;
     top: -15px;
     left: 0;
-    display: block; }
+    display: block;
+    z-index: 10; }
     .main-navigation > a img {
       display: block;
       width: 102px; }
@@ -137,7 +138,7 @@ body {
       color: #902d3f;
       font-weight: bold;
       font-size: 16px; }
-      .main-navigation ul a:hover {
+      .main-navigation ul a:hover, .main-navigation ul a.active {
         text-decoration: none;
         color: #ef2463; }
   .main-navigation .mobile-navigation-trigger {
@@ -174,6 +175,14 @@ body {
   .secondary-carousel .owl-next {
     right: 0;
     left: auto; }
+
+.introduction {
+  padding: 10px 80px;
+  text-align: center;
+  position: relative; }
+  @media (max-width: 768px) {
+    .introduction {
+      padding: 10px 50px; } }
 
 .hero {
   width: 100%;
@@ -251,6 +260,13 @@ body {
   @media (min-width: 768px) {
     .skirt {
       display: block; } }
+
+.hero {
+  background-size: cover;
+  height: 360px;
+  background-position: center center; }
+  .hero.recipes {
+    background-image: url("/images/berries-avocado-and-banana.jpg"); }
 
 #menu {
   background: #ffffff;
