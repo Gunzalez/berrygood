@@ -26,6 +26,13 @@ p {
         background: $brand-pink;
         color: #ffffff;
     }
+
+    &:focus,
+    &:active {
+        background: $brand-red;
+        color: #ffffff;
+        outline: none;
+    }
 }
 
 a {

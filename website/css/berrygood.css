@@ -51,6 +51,10 @@ p {
   .btn:hover {
     background: #ef2463;
     color: #ffffff; }
+  .btn:focus, .btn:active {
+    background: #902d3f;
+    color: #ffffff;
+    outline: none; }
 
 a {
   color: #219837;
@@ -200,7 +204,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 10px 0 15px 0; }
+    padding: 10px 0 10px 0; }
     .footer ul li {
       display: inline; }
       .footer ul li a {
@@ -224,7 +228,6 @@ body {
       background: url("/images/bg-footer.png") top right no-repeat #902d3f; }
       .footer ul {
         padding: 0;
-        margin: 0 0 15px 0;
         justify-content: flex-start; }
         .footer ul li {
           display: inline;
