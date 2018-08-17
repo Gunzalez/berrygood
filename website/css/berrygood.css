@@ -155,7 +155,7 @@ body {
     position: relative; }
     @media (max-width: 768px) {
       .secondary-carousel .slide {
-        padding: 10px 40px; } }
+        padding: 10px 50px; } }
   .secondary-carousel .owl-prev,
   .secondary-carousel .owl-next {
     transition: all 0.25s;
