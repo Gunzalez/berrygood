@@ -59,7 +59,7 @@
             });
 
             berrygood.navigation.API = berrygood.navigation.$mobileNav.data("mmenu");
-            berrygood.navigation.$mobileNavCloseButton.on('click',function() {
+            berrygood.navigation.$mobileNavCloseButton.on('click', function() {
                 berrygood.navigation.API.close();
             });
         }
