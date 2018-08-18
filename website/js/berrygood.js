@@ -37,12 +37,19 @@
 
         $controls: $('#filter-controls'),
         $filtered: $('#filtered'),
+        $mobileTrigger: $('#filter-controls-mobile'),
+
+        doFilter: function(){
+            
+        },
 
         init: function(){
+            var that = this;
             this.$controls.on('click', 'span', function(){
                 var $filterTag = $(this);
-                if($filterTag.attr('data-tag') !== 'clear'){
+                if($filterTag.attr('data-filter-tag') !== 'clear'){
                     if($filterTag.hasClass('active')){
+
 
 
 
@@ -59,6 +66,11 @@
                 } else {
                     $filterTag.parent().find('.active').removeClass('active');
                 }
+            });
+
+            this.$mobileTrigger.on('click', function(){
+                //console.log(that);
+                that.$controls.toggleClass('on-for-mobile');
             });
         }
     };

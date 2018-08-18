@@ -187,7 +187,7 @@ body {
   position: relative; }
   @media (max-width: 768px) {
     .introduction {
-      padding: 10px 50px; } }
+      padding: 15px 0; } }
 
 .hero {
   width: 100%;
@@ -270,12 +270,30 @@ body {
   background-size: cover;
   height: 360px;
   background-position: center center; }
-  .hero.recipes {
-    background-image: url("/images/berries-avocado-and-banana.jpg"); }
+
+.filter-controls-mobile {
+  margin-bottom: 15px;
+  margin-top: -10px; }
+  .filter-controls-mobile button {
+    border: 1px solid #cccccc;
+    background: #ffffff;
+    color: #8c8c8c;
+    width: 100%;
+    padding: 6px 10px;
+    border-radius: 3px;
+    text-transform: uppercase; }
+    .filter-controls-mobile button:hover, .filter-controls-mobile button:focus {
+      border: 1px solid #cccccc;
+      background: #ffffff;
+      color: #333333; }
+  @media (min-width: 768px) {
+    .filter-controls-mobile {
+      display: none; } }
 
 .filter-controls {
   text-align: center;
-  padding: 0 60px 30px; }
+  padding: 0 0 15px;
+  display: none; }
   .filter-controls > span {
     display: inline-block;
     padding: 6px 12px;
@@ -288,6 +306,12 @@ body {
       background: #ef2463; }
     .filter-controls > span.clear {
       background: #902d3f; }
+  .filter-controls.on-for-mobile {
+    display: block; }
+  @media (min-width: 768px) {
+    .filter-controls {
+      display: block;
+      padding: 0 60px 20px; } }
 
 .filtered .recipe {
   background-position: center center;
