@@ -39,8 +39,10 @@
 .cleft {
   clear: left; }
 
-p {
-  margin-bottom: 15px; }
+h1, h2, h3, h4, h5, p {
+  padding: 0;
+  margin: 0 0 15px 0;
+  line-height: 120%; }
 
 .btn {
   background: #902d3f;
@@ -159,7 +161,7 @@ body {
         padding: 10px 50px; } }
   .secondary-carousel .owl-prev,
   .secondary-carousel .owl-next {
-    transition: all 0.25s;
+    transition: all 0.33s;
     position: absolute;
     width: 40px;
     height: 40px;
@@ -177,7 +179,7 @@ body {
     left: auto; }
 
 .introduction {
-  padding: 10px 80px;
+  padding: 20px 80px;
   text-align: center;
   position: relative; }
   @media (max-width: 768px) {
@@ -267,6 +269,45 @@ body {
   background-position: center center; }
   .hero.recipes {
     background-image: url("/images/berries-avocado-and-banana.jpg"); }
+
+.filter-controls {
+  text-align: center;
+  padding: 0 60px 30px; }
+  .filter-controls > span {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 10px;
+    margin: 0 3px 12px 4px;
+    color: #ffffff;
+    background: #1059a8;
+    cursor: pointer;
+    transition: all 0.33s; }
+    .filter-controls > span.active {
+      background: #ef2463; }
+    .filter-controls > span:hover {
+      background: #902d3f; }
+
+.filtered .pod {
+  background-position: center center;
+  background-size: cover;
+  position: relative; }
+
+.filtered .title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: #ffffff;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 10px 12px;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.filtered h3 {
+  font-size: 2.5rem;
+  color: #282828; }
 
 #menu {
   background: #ffffff;

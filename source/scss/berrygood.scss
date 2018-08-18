@@ -8,6 +8,8 @@ $brand-pink:        #ef2463;
 $brand-red:         #902d3f;
 $brand-black:       #282828;
 $brand-dark:        #333333;
+$brand-blue:        #1059a8;
+
 
 @import "colours";
 @import "mixins";
@@ -154,7 +156,7 @@ body {
 
     .owl-prev,
     .owl-next {
-        transition: all 0.25s;
+        transition: all 0.33s;
         position: absolute;
         width: 40px;
         height: 40px;
@@ -177,7 +179,7 @@ body {
 }
 
 .introduction {
-    padding: 10px 80px;
+    padding: 20px 80px;
     text-align: center;
     position: relative;
 
@@ -304,6 +306,58 @@ body {
 
     &.recipes {
         background-image: url('/images/berries-avocado-and-banana.jpg');
+    }
+}
+
+.filter-controls {
+    text-align: center;
+    padding: 0 60px 30px;
+
+    > span {
+        display: inline-block;
+        padding: 6px 12px;
+        border-radius: 10px;
+        margin: 0 3px 12px 4px;
+        color: #ffffff;
+        background: $brand-blue;
+        cursor: pointer;
+        transition: all 0.33s;
+
+        &.active {
+            background: $brand-pink;
+        }
+
+        &:hover {
+            background: $brand-red;
+        }
+    }
+}
+
+.filtered {
+
+    .pod {
+        background-position: center center;
+        background-size: cover;
+        position: relative;
+    }
+
+    .title {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 80px;
+        background: #ffffff;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 10px 12px;
+        text-align: left;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+        color: $brand-black;
     }
 }
 
