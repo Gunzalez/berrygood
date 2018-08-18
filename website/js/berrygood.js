@@ -33,6 +33,36 @@
         }
     };
 
+    berrygood.recipeFilter = {
+
+        $controls: $('#filter-controls'),
+        $filtered: $('#filtered'),
+
+        init: function(){
+            this.$controls.on('click', 'span', function(){
+                var $filterTag = $(this);
+                if($filterTag.attr('data-tag') !== 'clear'){
+                    if($filterTag.hasClass('active')){
+
+
+
+
+                        $filterTag.removeClass('active');
+                    } else {
+
+
+
+
+
+                        $filterTag.addClass('active');
+                    }
+                } else {
+                    $filterTag.parent().find('.active').removeClass('active');
+                }
+            });
+        }
+    };
+
     berrygood.navigation = {
 
         // main navigation
@@ -84,6 +114,7 @@
         berrygood.environment.init();
         berrygood.navigation.init();
         berrygood.carousel.init();
+        berrygood.recipeFilter.init();
 
         // resize triggers
         $(window).on('resize', function () {
