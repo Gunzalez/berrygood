@@ -140,7 +140,7 @@ body {
 
 .hero-carousel {
   height: 360px;
-  background: mediumvioletred; }
+  background: #902d3f; }
 
 .secondary-carousel {
   padding: 15px 0; }
@@ -184,7 +184,7 @@ body {
 
 .pod {
   min-height: 290px;
-  background: #4978cf;
+  background: #902d3f;
   color: #FFFFFF;
   text-align: center;
   padding: 10px;
