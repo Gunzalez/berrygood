@@ -48,6 +48,9 @@ h1 {
   font-size: 4rem;
   color: #ef2463; }
 
+h2 {
+  font-size: 3.2rem; }
+
 .btn {
   background: #902d3f;
   color: #ffffff;
@@ -358,6 +361,24 @@ body {
 .filtered h3 {
   font-size: 2.5rem;
   color: #282828; }
+
+.link-to-recipes {
+  padding: 20px 0; }
+
+.recipe-image {
+  margin-bottom: 15px; }
+  .recipe-image img {
+    display: block;
+    width: 100%; }
+  @media (min-width: 768px) {
+    .recipe-image {
+      margin-bottom: 45px; } }
+
+.recipe-detail {
+  margin-bottom: 30px; }
+  @media (min-width: 768px) {
+    .recipe-detail {
+      margin-bottom: 45px; } }
 
 #menu {
   background: #ffffff;

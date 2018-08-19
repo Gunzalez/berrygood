@@ -428,6 +428,31 @@ body {
     }
 }
 
+.link-to-recipes {
+    padding: 20px 0;
+}
+
+.recipe-image {
+    margin-bottom: 15px;
+
+    img {
+        display: block;
+        width: 100%;
+    }
+
+    @media (min-width: $breakpoint2){
+        margin-bottom: 45px;
+    }
+}
+
+.recipe-detail {
+    margin-bottom: 30px;
+
+    @media (min-width: $breakpoint2){
+        margin-bottom: 45px;
+    }
+}
+
 
 
 
