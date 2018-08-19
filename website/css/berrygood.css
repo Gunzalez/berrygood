@@ -33,12 +33,6 @@
 * {
   outline: none; }
 
-.cright {
-  clear: right; }
-
-.cleft {
-  clear: left; }
-
 h1, h2, h3, h4, h5, p {
   padding: 0;
   margin: 0 0 15px 0;
@@ -64,15 +58,6 @@ h2 {
     background: #902d3f;
     color: #ffffff;
     outline: none; }
-
-a {
-  color: #219837;
-  -webkit-transition: background 0.25s;
-  -moz-transition: background 0.25s;
-  -o-transition: background 0.25s;
-  transition: background 0.25s; }
-  a:hover {
-    color: #0f7222; }
 
 .display-none {
   display: none; }
