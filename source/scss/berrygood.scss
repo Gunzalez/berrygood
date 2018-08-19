@@ -432,6 +432,7 @@ body {
     padding: 20px 0;
 }
 
+.grower-image,
 .recipe-image {
     margin-bottom: 15px;
 
@@ -445,12 +446,19 @@ body {
     }
 }
 
+.grower-detail,
 .recipe-detail {
     margin-bottom: 30px;
 
     @media (min-width: $breakpoint2){
         margin-bottom: 45px;
     }
+}
+
+.grower {
+    float: left;
+    padding-top: 45px;
+    border-top: 1px solid lighten($brand-light, 15%);
 }
 
 
