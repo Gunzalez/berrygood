@@ -313,6 +313,22 @@ body {
       display: block;
       padding: 0 60px 20px; } }
 
+@media (min-width: 768px) {
+  .filtered {
+    min-height: 800px; } }
+
+.filtered .filtered-out {
+  display: none; }
+
+.filtered #empty-list {
+  display: none; }
+  .filtered #empty-list h2 {
+    text-align: center;
+    padding: 60px 30px;
+    color: #cccccc; }
+  .filtered #empty-list.is-empty {
+    display: block; }
+
 .filtered .recipe {
   background-position: center center;
   background-size: cover;

@@ -38,38 +38,37 @@
         $controls: $('#filter-controls'),
         $filtered: $('#filtered'),
         $mobileTrigger: $('#filter-controls-mobile'),
-
-        doFilter: function(){
-            
-        },
-
         init: function(){
-            var that = this;
+
             this.$controls.on('click', 'span', function(){
+
                 var $filterTag = $(this);
-                if($filterTag.attr('data-filter-tag') !== 'clear'){
-                    if($filterTag.hasClass('active')){
+                var tag = $filterTag.attr('data-filter-tag');
+                var items = $('#filtered').find("[data-tags]");
+                var $emptyList = $('#empty-list');
+                
+                $emptyList.removeClass('is-empty');
 
-
-
-
-
-                        $filterTag.removeClass('active');
-                    } else {
-
-
-
-
-
-                        $filterTag.addClass('active');
-                    }
-                } else {
+                if(!$filterTag.hasClass('active')){
                     $filterTag.parent().find('.active').removeClass('active');
+                    for (var i = 0; i < items.length; i++) {
+                        var $item = $(items[i]);
+                        $item.addClass('filtered-out');
+                        if ($item.attr('data-tags').split(" ").indexOf(tag) > -1 || tag === "") {
+                            $item.removeClass('filtered-out');
+                        }
+                    }
+                    $filterTag.addClass('active');
                 }
+
+                if(!$('#filtered').find("[data-tags]").not('.filtered-out').length){
+                    $emptyList.addClass('is-empty');
+                }
+                
             });
 
+            var that = this;
             this.$mobileTrigger.on('click', function(){
-                //console.log(that);
                 that.$controls.toggleClass('on-for-mobile');
             });
         }

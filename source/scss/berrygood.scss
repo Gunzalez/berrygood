@@ -368,6 +368,28 @@ body {
 
 .filtered {
 
+    @media (min-width: $breakpoint2){
+        min-height: 800px;
+    }
+
+    .filtered-out {
+        display: none;
+    }
+
+    #empty-list {
+        display: none;
+        
+        h2 {
+            text-align: center;
+            padding: 60px 30px;
+            color: $brand-light;
+        }
+
+        &.is-empty {
+            display: block;
+        }
+    }
+
     .recipe {
         background-position: center center;
         background-size: cover;
