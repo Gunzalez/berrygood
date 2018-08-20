@@ -38,12 +38,26 @@ h1, h2, h3, h4, h5, p {
   margin: 0 0 15px 0;
   line-height: 120%; }
 
+p {
+  color: #333333;
+  font-weight: 300;
+  font-size: 1.8rem; }
+
 h1 {
-  font-size: 4rem;
+  font-size: 3.6rem;
   color: #ef2463; }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 4rem; } }
 
 h2 {
-  font-size: 3.2rem; }
+  font-size: 2.8rem; }
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 3.2rem; } }
+
+h4 {
+  font-weight: 400; }
 
 .btn {
   background: #902d3f;
@@ -199,7 +213,7 @@ body {
 .footer {
   height: 225px;
   position: relative;
-  border-bottom: 10px solid #ef2463;
+  border-bottom: 10px solid #cccccc;
   background: #902d3f; }
   .footer ul {
     list-style: none;
@@ -213,7 +227,8 @@ body {
       .footer ul li a {
         display: inline-block;
         color: #ffffff;
-        font-size: 1.5rem;
+        font-size: 1.7rem;
+        font-weight: 100;
         padding: 10px 12px; }
         .footer ul li a:hover {
           text-decoration: none; }
@@ -221,14 +236,22 @@ body {
     color: #ffffff; }
     .footer .tel-link:hover {
       text-decoration: none; }
+  .footer .copyright {
+    text-align: center;
+    padding: 30px 0 0 0;
+    margin-bottom: 0;
+    color: #ffffff;
+    font-size: 1.7rem; }
   .footer p {
     color: #ffe6d0;
-    font-size: 1.5rem;
-    text-align: center; }
+    font-size: 1.5rem; }
   @media (min-width: 768px) {
     .footer {
       border-bottom: 20px solid #dddddd;
       background: url("/images/bg-footer.png") top right no-repeat #902d3f; }
+      .footer .copyright {
+        padding: 12px 45px 0 0;
+        float: left; }
       .footer ul {
         padding: 0;
         justify-content: flex-start; }
@@ -237,7 +260,7 @@ body {
           padding: 0 10px 15px 0; }
           .footer ul li:first-child a {
             padding-left: 0; }
-      .footer p {
+      .footer .address {
         text-align: left; } }
 
 .skirt {

@@ -194,10 +194,11 @@ body {
     }
 }
 
+
 .footer {
     height: 225px;
     position: relative;
-    border-bottom: 10px solid $brand-pink;
+    border-bottom: 10px solid $brand-light;
     background: $brand-red;
 
     ul {
@@ -208,14 +209,14 @@ body {
         justify-content: center;
         padding: 10px 0 10px 0;
     
-
         li {
             display: inline;
 
             a {
                 display: inline-block;
                 color: #ffffff;
-                font-size: 1.5rem;
+                font-size: 1.7rem;
+                font-weight: 100;
                 padding: 10px 12px;
 
                 &:hover {
@@ -233,13 +234,25 @@ body {
         }
     }
 
+    .copyright {
+        text-align: center;
+        padding:30px 0 0 0;
+        margin-bottom: 0;
+        color: #ffffff;
+        font-size: 1.7rem;
+    }
+
     p {
         color: #ffe6d0;
         font-size: 1.5rem;
-        text-align: center;
     }
 
     @media (min-width: $breakpoint2){
+
+        .copyright {
+            padding: 12px 45px 0 0;
+            float: left;
+        }
 
         border-bottom: 20px solid #dddddd;
 
@@ -261,11 +274,12 @@ body {
         
         background: url("/images/bg-footer.png") top right no-repeat $brand-red;
 
-        p {
+        .address {
             text-align: left;
         }
     }
 }
+
 
 .skirt {
     position: absolute;
