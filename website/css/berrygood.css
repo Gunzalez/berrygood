@@ -222,7 +222,7 @@ body {
     .footer .tel-link:hover {
       text-decoration: none; }
   .footer p {
-    color: #cccccc;
+    color: #ffe6d0;
     font-size: 1.5rem;
     text-align: center; }
   @media (min-width: 768px) {
