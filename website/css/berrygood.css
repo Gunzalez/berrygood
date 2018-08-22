@@ -160,21 +160,29 @@ body {
 .owl-next {
   transition: all 0.33s;
   position: absolute;
-  width: 40px;
-  height: 40px;
-  background: #902d3f !important;
+  width: 39px;
+  height: 39px;
   display: block;
   border-radius: 50%;
   top: 50%;
   margin-top: -20px;
-  left: 0; }
+  left: -5px;
+  opacity: 0.8;
+  background: url("/images/bg-arrow-left.png") center center no-repeat #902d3f !important; }
   .owl-prev:hover,
   .owl-next:hover {
-    background: #ef2463 !important; }
+    opacity: 1;
+    background: url("/images/bg-arrow-left.png") center center no-repeat #ef2463 !important; }
+  .owl-prev > span,
+  .owl-next > span {
+    display: none; }
 
 .owl-next {
-  right: 0;
-  left: auto; }
+  right: -5px;
+  left: auto;
+  background: url("/images/bg-arrow-right.png") center center no-repeat #902d3f !important; }
+  .owl-next:hover {
+    background: url("/images/bg-arrow-right.png") center center no-repeat #ef2463 !important; }
 
 .secondary-carousel {
   padding: 15px 0; }
@@ -235,7 +243,7 @@ body {
   text-align: center;
   vertical-align: middle; }
 
-.tertiary-carousel.berries-carousel h3 {
+.tertiary-carousel.berries-carousel h2 {
   margin-bottom: 15px;
   color: #ffffff; }
 
