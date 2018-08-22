@@ -181,7 +181,8 @@ body {
   .secondary-carousel .slide {
     padding: 10px 80px;
     text-align: center;
-    position: relative; }
+    position: relative;
+    min-height: 145px; }
     @media (max-width: 768px) {
       .secondary-carousel .slide {
         padding: 10px 50px; } }
@@ -215,7 +216,27 @@ body {
   text-overflow: ellipsis; }
 
 .tertiary-carousel.grower-carousel h3 {
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  color: #333333; }
+
+.tertiary-carousel.berries-carousel a {
+  background-size: cover;
+  background-position: center center;
+  display: block;
+  width: 100%;
+  height: 390px; }
+  .tertiary-carousel.berries-carousel a:hover {
+    text-decoration: none; }
+
+.tertiary-carousel.berries-carousel .title {
+  margin: 0 40px; }
+
+.tertiary-carousel.berries-carousel h3 {
+  margin-bottom: 5px;
+  color: #ffffff; }
+
+.tertiary-carousel.berries-carousel p {
+  color: #ffffff; }
 
 .recipes-four {
   position: relative;
@@ -258,13 +279,9 @@ body {
 
 .pod {
   min-height: 390px;
-  background: #902d3f;
   color: #FFFFFF;
   text-align: center;
-  margin-bottom: 15px;
-  -webkit-box-shadow: 0px 2px 7px 2px rgba(0, 0, 0, 0.09);
-  -moz-box-shadow: 0px 2px 7px 2px rgba(0, 0, 0, 0.09);
-  box-shadow: 0px 2px 7px 2px rgba(0, 0, 0, 0.09); }
+  margin-bottom: 15px; }
   @media (min-width: 768px) {
     .pod {
       margin-bottom: 30px; } }
