@@ -156,6 +156,26 @@ body {
   height: 360px;
   background: #902d3f; }
 
+.owl-prev,
+.owl-next {
+  transition: all 0.33s;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: #902d3f !important;
+  display: block;
+  border-radius: 50%;
+  top: 50%;
+  margin-top: -20px;
+  left: 0; }
+  .owl-prev:hover,
+  .owl-next:hover {
+    background: #ef2463 !important; }
+
+.owl-next {
+  right: 0;
+  left: auto; }
+
 .secondary-carousel {
   padding: 15px 0; }
   .secondary-carousel .slide {
@@ -165,24 +185,37 @@ body {
     @media (max-width: 768px) {
       .secondary-carousel .slide {
         padding: 10px 50px; } }
-  .secondary-carousel .owl-prev,
-  .secondary-carousel .owl-next {
-    transition: all 0.33s;
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    background: #902d3f !important;
-    display: block;
-    border-radius: 50%;
-    top: 50%;
-    margin-top: -20px;
-    left: 0; }
-    .secondary-carousel .owl-prev:hover,
-    .secondary-carousel .owl-next:hover {
-      background: #ef2463 !important; }
-  .secondary-carousel .owl-next {
-    right: 0;
-    left: auto; }
+
+.tertiary-carousel .slide {
+  width: 100%;
+  height: 390px;
+  position: relative; }
+
+.tertiary-carousel .owl-dots {
+  display: none; }
+
+.tertiary-carousel.grower-carousel a {
+  background-size: cover;
+  background-position: center center;
+  display: block;
+  width: 100%;
+  height: 390px; }
+
+.tertiary-carousel.grower-carousel .title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: #ffffff;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 10px 12px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.tertiary-carousel.grower-carousel h3 {
+  margin-bottom: 5px; }
 
 .recipes-four {
   position: relative;

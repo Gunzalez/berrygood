@@ -126,6 +126,30 @@ body {
     background: $brand-red;
 }
 
+// secondary and tertiary carousel overrides
+.owl-prev,
+.owl-next {
+    transition: all 0.33s;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: $brand-red !important;
+    display: block;
+    border-radius: 50%;
+    top: 50%;
+    margin-top: -20px;
+    left: 0;
+
+    &:hover {
+        background: $brand-pink !important;
+    }
+}
+
+.owl-next {
+    right: 0;
+    left: auto;
+}
+
 .secondary-carousel {
     padding: 15px 0;
 
@@ -138,28 +162,48 @@ body {
             padding: 10px 50px;
         }
     }
+}
 
-    .owl-prev,
-    .owl-next {
-        transition: all 0.33s;
-        position: absolute;
-        width: 40px;
-        height: 40px;
-        background: $brand-red !important;
-        display: block;
-        border-radius: 50%;
-        top: 50%;
-        margin-top: -20px;
-        left: 0;
+.tertiary-carousel {
 
-        &:hover {
-            background: $brand-pink !important;
-        }
+    .slide {
+        width: 100%;
+        height: 390px; 
+        position: relative;
+        
     }
-    
-    .owl-next {
-        right: 0;
-        left: auto;
+
+    .owl-dots {
+        display: none;
+    }
+
+    &.grower-carousel {
+
+        a {
+            background-size: cover;
+            background-position: center center;
+            display: block;
+            width: 100%;
+            height: 390px;
+        }
+            
+        .title {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 80px;
+            background: #ffffff;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 10px 12px;
+            text-align: center;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        h3 {
+            margin-bottom: 5px;
+        }
     }
 }
 
