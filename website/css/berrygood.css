@@ -224,15 +224,19 @@ body {
   background-position: center center;
   display: block;
   width: 100%;
-  height: 390px; }
+  height: 390px;
+  display: table; }
   .tertiary-carousel.berries-carousel a:hover {
     text-decoration: none; }
 
 .tertiary-carousel.berries-carousel .title {
-  margin: 0 40px; }
+  padding: 0 45px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle; }
 
 .tertiary-carousel.berries-carousel h3 {
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   color: #ffffff; }
 
 .tertiary-carousel.berries-carousel p {

@@ -220,20 +220,23 @@ body {
             &:hover {
                 text-decoration: none;
             }
+            display: table;
         }
-            
+        
         .title {
-            margin: 0 40px;            
+            padding: 0 45px;    
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;        
         }
 
         h3 {
-            margin-bottom: 5px;
+            margin-bottom: 15px;
             color: #ffffff;
         }
 
         p {
             color: #ffffff;
-
         }
     }
 }
