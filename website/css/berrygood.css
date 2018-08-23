@@ -196,7 +196,9 @@ body {
   .v-scroll .v-content {
     width: 100%; }
   .v-scroll .article {
-    width: 100%; }
+    width: 100%;
+    display: block;
+    text-decoration: none; }
     .v-scroll .article img {
       width: 100%; }
     .v-scroll .article .title {
@@ -204,7 +206,12 @@ body {
       .v-scroll .article .title h4 {
         color: #333333 !important;
         border-bottom: 1px solid #cccccc;
-        padding-bottom: 15px; }
+        padding-bottom: 15px;
+        font-size: 1.5rem; }
+    .v-scroll .article:hover {
+      text-decoration: none; }
+      .v-scroll .article:hover .title h4 {
+        border-color: #333333; }
 
 .owl-next {
   right: -5px;

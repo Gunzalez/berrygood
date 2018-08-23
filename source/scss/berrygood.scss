@@ -180,6 +180,8 @@ body {
     
     .article {
         width: 100%;
+        display: block;
+        text-decoration: none;
 
         img { 
             width: 100%;
@@ -192,6 +194,18 @@ body {
                 color: $brand-dark !important;
                 border-bottom: 1px solid $brand-light;
                 padding-bottom: 15px;
+                font-size: 1.5rem;
+            }
+        }
+
+        &:hover {
+            text-decoration: none;
+
+            .title {
+
+                h4 {
+                    border-color: $brand-dark;
+                }
             }
         }
     }
