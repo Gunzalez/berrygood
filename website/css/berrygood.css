@@ -177,6 +177,35 @@ body {
   .owl-next > span {
     display: none; }
 
+.v-scroll {
+  height: 390px;
+  width: 100%; }
+  .v-scroll .title {
+    padding: 15px 25px;
+    text-align: left;
+    background: #f9f4f5; }
+  .v-scroll h4 {
+    color: #902d3f;
+    margin: 0;
+    padding: 0; }
+  .v-scroll .v-container {
+    height: 340px;
+    overflow-y: scroll;
+    position: relative;
+    width: 100%; }
+  .v-scroll .v-content {
+    width: 100%; }
+  .v-scroll .article {
+    width: 100%; }
+    .v-scroll .article img {
+      width: 100%; }
+    .v-scroll .article .title {
+      padding-bottom: 20px; }
+      .v-scroll .article .title h4 {
+        color: #333333 !important;
+        border-bottom: 1px solid #cccccc;
+        padding-bottom: 15px; }
+
 .owl-next {
   right: -5px;
   left: auto;
@@ -331,7 +360,7 @@ body {
     color: #ffffff;
     font-size: 1.7rem; }
   .footer p {
-    color: #ffe6d0;
+    color: #f9f4f5;
     font-size: 1.5rem; }
   @media (min-width: 768px) {
     .footer {
@@ -456,7 +485,7 @@ body {
 
 .filtered h3 {
   font-size: 2.5rem;
-  color: #282828; }
+  color: #333333; }
 
 .link-to-recipes {
   padding: 20px 0; }
