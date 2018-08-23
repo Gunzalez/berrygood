@@ -172,6 +172,7 @@ body {
         overflow-y: scroll;
         position: relative;
         width: 100%;
+        -webkit-overflow-scrolling: touch;
     }
 
     .v-content {
@@ -209,8 +210,6 @@ body {
             }
         }
     }
-
-    
 }
 
 .owl-next {

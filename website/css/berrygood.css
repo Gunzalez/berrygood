@@ -192,7 +192,8 @@ body {
     height: 340px;
     overflow-y: scroll;
     position: relative;
-    width: 100%; }
+    width: 100%;
+    -webkit-overflow-scrolling: touch; }
   .v-scroll .v-content {
     width: 100%; }
   .v-scroll .article {
