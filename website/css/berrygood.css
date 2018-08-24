@@ -38,10 +38,13 @@ h1, h2, h3, h4, h5, p {
   margin: 0 0 15px 0;
   line-height: 120%; }
 
-p {
+p, ol, ul {
   color: #333333;
   font-weight: 300;
   font-size: 1.8rem; }
+
+strong {
+  font-weight: 400; }
 
 h1 {
   font-size: 3.6rem;
@@ -563,6 +566,9 @@ body {
   float: left;
   padding-top: 45px;
   border-top: 1px solid #f2f2f2; }
+
+.spacer {
+  height: 510px; }
 
 #menu {
   background: #ffffff;

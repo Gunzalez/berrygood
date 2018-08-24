@@ -9,10 +9,14 @@ h1, h2, h3, h4, h5, p {
     line-height: 120%;
 }
 
-p {
+p, ol, ul {
     color: #333333;
     font-weight: 300;
     font-size: 1.8rem;
+}
+
+strong {
+    font-weight: 400;
 }
 
 h1 {
