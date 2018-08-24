@@ -154,7 +154,43 @@ body {
 
 .hero-carousel {
   height: 360px;
-  background: #902d3f; }
+  background: #902d3f;
+  position: relative; }
+  .hero-carousel .slide {
+    height: 360px;
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 2s; }
+    .hero-carousel .slide.active {
+      opacity: 1; }
+  .hero-carousel .dots {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+    .hero-carousel .dots ul {
+      margin: 0 10px 15px 0;
+      padding: 0;
+      list-style: none;
+      text-align: right; }
+    .hero-carousel .dots li {
+      display: inline;
+      padding-left: 10px; }
+    .hero-carousel .dots span {
+      display: inline-block;
+      background: white;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      transition: background 2s; }
+      .hero-carousel .dots span.active {
+        background: #ef2463; }
 
 .owl-prev,
 .owl-next {

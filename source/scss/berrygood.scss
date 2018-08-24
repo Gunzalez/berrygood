@@ -124,6 +124,56 @@ body {
 .hero-carousel {
     height: 360px;
     background: $brand-red;
+    position: relative;
+
+    .slide {
+        height: 360px;
+        background-size: cover;
+        background-position: center center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        transition: opacity 2s;
+
+        &.active {
+            opacity: 1;
+        }
+    }
+
+    .dots {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        ul {
+            margin: 0 10px 15px 0;
+            padding: 0;
+            list-style: none;
+            text-align: right;
+        }
+
+        li {
+            display: inline;
+            padding-left: 10px;
+        }
+
+        span {
+            display: inline-block;
+            background: lighten($brand-dark, 80%);
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            transition: background 2s;
+
+            &.active {
+                background: $brand-pink;
+            }
+        }
+    }
 }
 
 // secondary and tertiary carousel overrides

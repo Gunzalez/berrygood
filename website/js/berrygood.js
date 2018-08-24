@@ -106,6 +106,7 @@
         }
     };
 
+    // for all non hero carousel
     berrygood.carousel = {
         init: function(){
             $('.owl-carousel').owlCarousel({
@@ -118,6 +119,35 @@
         }
     };
 
+    berrygood.heroCarousel = {
+
+        $carousel: $('#hero-carousel'),
+
+        init: function(){
+            var dots = this.$carousel.find('.dots span');
+            var slides = this.$carousel.find('.slide');
+
+            if(this.$carousel.length){
+                setInterval(() => {
+
+                    // current index
+                    var count = slides.length;
+                    var index = slides.index($('.active'));
+                    index++;
+                    if(index === count){
+                        index = 0;
+                    }
+                    slides.removeClass('active');
+                    slides.eq(index).addClass('active');
+
+                    dots.removeClass('active');
+                    dots.eq(index).addClass('active');
+
+                }, 7000);
+            }
+        }
+
+    };
 
     berrygood.init = function () {
 
@@ -126,6 +156,7 @@
         berrygood.navigation.init();
         berrygood.carousel.init();
         berrygood.recipeFilter.init();
+        berrygood.heroCarousel.init();
 
         // resize triggers
         $(window).on('resize', function () {
