@@ -9,11 +9,14 @@ h1, h2, h3, h4, h5, p {
     line-height: 120%;
 }
 
+body {
+    font-family: $bodyFont;
+}
+
 p, ol, ul {
     color: #333333;
     font-weight: 300;
     font-size: 1.8rem;
-    letter-spacing: 1px;
 }
 
 strong {
@@ -21,6 +24,7 @@ strong {
 }
 
 h1 {
+    font-family: $headerFont;
     font-size: 3.6rem;
     color: $brand-pink;
 
@@ -30,6 +34,7 @@ h1 {
 }
 
 h2 {
+    font-family: $headerFont;
     font-size: 2.8rem;
 
     @media (min-width: $breakpoint2){
@@ -37,7 +42,12 @@ h2 {
     }
 }
 
+h3 {
+    font-family: $headerFont;
+}
+
 h4 {
+    font-family: $headerFont;
     font-weight: 400;
 }
 
