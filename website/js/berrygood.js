@@ -111,7 +111,6 @@
         init: function(){
             $('.owl-carousel').owlCarousel({
                 items:1,
-                margin:10,
                 autoHeight:true,
                 nav: true,
                 loop: true
@@ -128,7 +127,7 @@
             var slides = this.$carousel.find('.slide');
 
             if(this.$carousel.length){
-                setInterval(() => {
+                setInterval(function(){
 
                     // current index
                     var count = slides.length;
@@ -146,7 +145,6 @@
                 }, 7000);
             }
         }
-
     };
 
     berrygood.init = function () {
