@@ -361,11 +361,12 @@ body {
   height: 390px;
   color: #FFFFFF;
   text-align: center;
-  margin-bottom: 15px;
-  overflow: hidden; }
+  margin-bottom: 15px; }
   @media (min-width: 768px) {
     .pod {
       margin-bottom: 30px; } }
+  .pod.has-iframe {
+    overflow: hidden; }
 
 .footer {
   height: 225px;
