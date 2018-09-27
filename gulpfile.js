@@ -8,21 +8,21 @@ var browserSync = require('browser-sync').create();
 // configure the jshint task
 gulp.task('jshint', function() {
     return gulp.src('website/js/*.js')
-            .pipe(jshint())
-            .pipe(jshint.reporter('jshint-stylish'))
-            .pipe(browserSync.reload({
-                stream: true
-            }));
+        .pipe(jshint())
+        .pipe(jshint.reporter('jshint-stylish'))
+        .pipe(browserSync.reload({
+            stream: true
+        }));
 });
 
 // configure sass task
 gulp.task('sass', function(){
     return gulp.src('source/scss/**/*.scss')
-            .pipe(sass())
-            .pipe(gulp.dest('website/css'))
-            .pipe(browserSync.reload({
-                stream: true
-            }));
+        .pipe(sass())
+        .pipe(gulp.dest('website/css'))
+        .pipe(browserSync.reload({
+            stream: true
+        }));
 });
 
 // start web server
@@ -35,14 +35,14 @@ gulp.task('browserSync', function() {
 });
 
 // watch changes to HTML, CSS and JS,
-gulp.task('watch', ['browserSync'], function (){
-    gulp.watch('source/scss/**/*.scss', ['sass']);
-    gulp.watch('website/js/*.js', ['jshint']);
+gulp.task('watch', gulp.parallel('browserSync', function (){
+    gulp.watch('source/scss/**/*.scss', gulp.series('sass'));
+    gulp.watch('website/js/*.js', gulp.series('jshint'));
     gulp.watch('website/*.html', browserSync.reload);
-});
+}));
 
 // define the default task and add the watch task to it
-gulp.task('default', ['watch']);
+gulp.task('default', gulp.parallel('watch'));
 
 
 

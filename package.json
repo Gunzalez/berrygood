@@ -9,8 +9,8 @@
   "author": "segun konibire",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.12.10",
-    "gulp": "^3.9.1",
+    "browser-sync": "^2.24.7",
+    "gulp": "^4.0.0",
     "gulp-concat": "^2.6.0",
     "gulp-jshint": "^2.0.1",
     "gulp-rename": "^1.2.2",
