@@ -149,35 +149,47 @@ body {
     bottom: 0;
     right: 0;
     opacity: 0;
-    transition: opacity 2s;
-    padding-top: 60px; }
+    transition: opacity 1000ms; }
     .hero-carousel .slide.active {
       opacity: 1; }
     .hero-carousel .slide .title {
-      color: #ffffff;
+      color: #1059a8;
       text-transform: uppercase;
       letter-spacing: 0;
-      text-align: center; }
+      font-size: 2.6rem;
+      background-color: rgba(255, 255, 255, 0.8);
+      line-height: 100%;
+      padding: 12px 20px;
+      margin-top: 30px;
+      border-radius: 10px; }
+      @media (min-width: 768px) {
+        .hero-carousel .slide .title {
+          width: 45%;
+          font-size: 3.2rem; } }
   .hero-carousel .dots {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0; }
     .hero-carousel .dots ul {
-      margin: 0 10px 15px 0;
-      padding: 0;
+      margin: 0;
       list-style: none;
-      text-align: right; }
+      text-align: right;
+      background: white;
+      display: inline-block;
+      padding: 6px 10px;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px; }
     .hero-carousel .dots li {
-      display: inline;
-      padding-left: 10px; }
+      display: inline-block;
+      margin-right: 5px;
+      margin-left: 5px; }
     .hero-carousel .dots span {
       display: inline-block;
-      background: white;
+      background: #b3b3b3;
       width: 10px;
       height: 10px;
-      border-radius: 50%;
-      transition: all 2s; }
+      border-radius: 50%; }
       .hero-carousel .dots span.active {
         background: #ef2463; }
 

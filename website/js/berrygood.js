@@ -142,7 +142,7 @@
                     dots.removeClass('active');
                     dots.eq(index).addClass('active');
 
-                }, 7000);
+                }, 5000);
             }
         }
     };
@@ -162,7 +162,7 @@
             var newWidth = $(window).width(),
                 oldWidth = berrygood.properties.windowWidth;
 
-            if (oldWidth != newWidth) {
+            if (oldWidth !== newWidth) {
                 berrygood.properties.windowWidth = newWidth;
                 berrygood.resize();
             }
