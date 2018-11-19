@@ -153,7 +153,7 @@ body {
     .hero-carousel .slide.active {
       opacity: 1; }
     .hero-carousel .slide .title {
-      color: #1059a8;
+      color: #8e2c3d;
       text-transform: uppercase;
       letter-spacing: 0;
       font-size: 2.6rem;
@@ -165,7 +165,7 @@ body {
       @media (min-width: 768px) {
         .hero-carousel .slide .title {
           width: 45%;
-          font-size: 3.2rem; } }
+          font-size: 3rem; } }
   .hero-carousel .dots {
     position: absolute;
     bottom: 0;
