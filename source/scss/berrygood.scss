@@ -142,7 +142,7 @@ body {
         }
 
         .title {
-            color: $brand-blue;
+            color: $brand-red;
             text-transform: uppercase;
             letter-spacing: 0;
             font-size: 2.6rem;
@@ -154,7 +154,7 @@ body {
 
             @media (min-width: $breakpoint2){
                 width: 45%;
-                font-size: 3.2rem;
+                font-size: 3rem;
             }
         }
     }
