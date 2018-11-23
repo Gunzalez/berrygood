@@ -671,6 +671,14 @@ body {
     }
 }
 
+.news-detail {
+
+    button {
+        display: inline-block;
+        margin: 0 auto;
+    }
+}
+
 .filtered {
 
     @media (min-width: $breakpoint2){

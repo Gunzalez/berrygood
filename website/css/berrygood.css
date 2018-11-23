@@ -529,6 +529,10 @@ body {
       display: block;
       padding: 0 60px 20px; } }
 
+.news-detail button {
+  display: inline-block;
+  margin: 0 auto; }
+
 @media (min-width: 768px) {
   .filtered {
     min-height: 800px; } }
