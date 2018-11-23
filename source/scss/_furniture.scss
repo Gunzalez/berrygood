@@ -55,19 +55,20 @@ h4 {
     background: $brand-red;
     color: #ffffff;
     transition: all 0.25s;
-    border-radius: 6px;
+    border-radius: 12px;
     font-size: 1.6rem;
     font-weight: 100;
-
-    &:hover {
-        background: $brand-pink;
-        color: #ffffff;
-    }
+    padding: 3px 30px;
 
     &:focus,
     &:active {
         background: $brand-red;
         color: #ffffff;
         outline: none;
+    }
+
+    &:hover {
+        background: $brand-pink !important;
+        color: #ffffff;
     }
 }

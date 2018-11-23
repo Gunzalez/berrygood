@@ -106,6 +106,19 @@
         }
     };
 
+    berrygood.news = {
+
+        $items: $('.news-detail'),
+
+        init: function(){
+            this.$items.each(function(index, el){
+                $(el).find('[data-toggle]').on('click', function(){
+                    $(el).toggleClass('full');
+                });
+            });
+        }
+    };
+
     // for all non hero carousel
     berrygood.carousel = {
         init: function(){
@@ -153,6 +166,7 @@
         berrygood.environment.init();
         berrygood.navigation.init();
         berrygood.carousel.init();
+        berrygood.news.init();
         berrygood.recipeFilter.init();
         berrygood.heroCarousel.init();
 

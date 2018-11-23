@@ -1,4 +1,48 @@
 
+
+Updates: November
+================================
+- top of page facts carousel has different colour left & right buttons (but probably ok) - DONE - (css)
+- growers carousel has more transparency on the meet our growers caption div - DONE (css)
+- instagram block (4 recipes) has white border between the block - DONE (css)
+- bottom of page facts carousel should have bolder text and a horizontal line - DONE (css)
+- Love Fresh Berries content box on http://dev.fruits.sugarshaker.com/home - text starting ‘For non trade enquiries…’ is too small - needs to be same size as other body copy - DOne (css)
+
+Homepage:
+- dots on carousel need to be nav links to panels - we have discussed this you say it’s a bit of a faff, if it’s going to take a long time drop it DONE - (css)
+- header logo is smaller - DONE (css)
+- header isn’t as high (same as fruits site) - DONE (css)
+- nav text need to be bold - DONE (css)
+- footer address is a different colour - DONE (css)
+- footer nav needs to be bold - DONE (css)
+- footer very bottom is grey not white - DONE (css)
+- nav doesn’t have active class - It does, .active, see http://www.gunzalez.com/pp/berrygood/
+
+Recipes:
+- list page blocks are the wrong shape - DONE (css)
+- list page blocks require a little more transparency on the caption - DONE (css)
+- details page: back button needs more rounded corners - DONE (css)
+- details page content… needs a method title and method needs to be in order list - It does, see http://www.gunzalez.com/pp/berrygood/
+- details page content… needs an ingredients title and method ingredients to be in unorder list - Unclear, but will just say see http://www.gunzalez.com/pp/berrygood/
+- ul, ol needs to be styled for the recipes, so stay in the content area - It is, see http://www.gunzalez.com/pp/berrygood/
+
+
+Total time spent so far - 12 hours + 4 = 16 hours
+
+Files names
+===================
+_furniture.scss
+berrygood.scss
+berrygood.css
+
+
+
+
+
+
+
+
+
 Berry Good time spent (43 hours estimated)
 =================================================================================
 
